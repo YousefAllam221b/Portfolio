@@ -2,33 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
+
     <title>Contact me</title>
+
+
     <link href="css/styles.css" rel="stylesheet">
-    <link rel="icon" href="icons/contact.png">
+    <link rel="icon" href="icons/tab-icons/contact.png">
+
     <nav id = 'mainNav'>
-      <h1>Yousef Allam's Portfolio</h1>
+      <h1 id = 'main-title'>Yousef Allam's Portfolio</h1>
+
       <div id = 'navBarContainer'>
-        <ul>
+
           <li class = 'navButtons'>Home</li>
           <li class = 'navButtons'>Python</li>
           <li class = 'navButtons'>Java</li>
           <li class = 'navButtons'>Certificates</li>
-          <li class = 'navButtons'>About</li>
           <li class = 'navButtons'>Contact me</li>
-        </ul>
+          <li class = 'navButtons' id = 'last-button'>About</li>
+
       </div>
+
     </nav>
   </head>
-  <body>
-    <ul>
-      <li>Phone</li>
-      <li>Facebook</li>
-      <li>Github</li>
-      <li>Linkedin</li>
-      <li>Email</li>
-      <li>Whatsapp</li>
-      <li>Freelancer</li>
+  <body id = 'contact-body'>
+    <div id = 'contact-main'>
+    <h2 id = 'conact-header'>Contact ways:</h2>
+    <p id = ''>You can contact me through any of the following ways and I will try to respond as soon as possible</p>
+
+
+    <ul id = 'contacts'>
+      <div class = 'contact-icons'>
+        <img class = 'photo phone-item' src = 'icons/contact-icons/phone.png'>
+        <li id = 'phone' class = 'items photo phone-item'>Phone</li>
+      </div>
+
+      <div class = 'contact-icons'>
+        <img class = 'photo facebook-item' src = 'icons/contact-icons/facebook.png'>
+        <li id = 'facebook' class = 'items photo facebook-item'>Facebook</li>
+      </div>
+
+      <div class = 'contact-icons'>
+        <img class = 'photo github-item' src = 'icons/contact-icons/github.png'>
+        <li id = 'github' class = 'items photo github-item'>Github</li>
+      </div>
+
+      <div class = 'contact-icons'>
+        <img class = 'photo linkedin-item' src = 'icons/contact-icons/linkedin.png'>
+        <li id = 'linkedin' class = 'items photo linkedin-item'>Linkedin</li>
+      </div>
+
+      <div class = 'contact-icons'>
+        <img class = 'photo email-item' src = 'icons/contact-icons/email.jpg'>
+        <li id = 'email' class = 'items photo email-item'>Email</li>
+      </div>
+      <!--
+      <div id = 'first' class = 'contact-icons'>
+        <img class = 'photo' src = 'icons/contact-icons/whatsapp.png'>
+        <li id = 'whatsapp' class = 'items photo'>Whatsapp</li>
+      </div>
+    -->
     </ul>
+  </div>
     <script src="js/App.js"></script>
   </body>
   <footer><p>Copyrights</p></footer>

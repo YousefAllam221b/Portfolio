@@ -3,66 +3,84 @@
 {
   box-sizing: border-box;
   margin: 0px;
-
 }
 body
 {
+  /*So that the body don't overlap with nav or footer*/
   margin-top: 100px;
   margin-bottom: 20px;
-  
 }
 
 /*NAV BAR STYLES*/
 #mainNav
 {
+  /*To keep h1 at right and buttons and left both at center vertically*/
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
+  /*Colors*/
   background-color:  rgb(43 71 130);
   color: rgb(211 207 201);
+
+  /*to get the width and height*/
   padding: 1rem;
   width: 100vw;
+  height: 5em;
 
+  /*to keep it fixed at the top*/
   position: fixed;
   top: 0;
+
+  font-family: 'Work Sans', sans-serif;
 }
 
 
 /*FOOTER STYLES*/
 footer
 {
+  /*To keep it at the bottom*/
   position: fixed;
   bottom: 0;
 
   text-align: center;
   width: 100%;
+  /*Colors*/
   background-color:  rgb(24 26 27 / 95%);
+  color: rgb(211 207 201);
 }
 
-
-h1
+/*Main title 'h1'*/
+#main-title
 {
-  text-align: center;
-  padding: inherit;
+
+  padding: 1em;
+  
 }
 
-#navBarContainer{
-  float: right;
-
+#navBarContainer
+{
+  display: flex;
+  flex-direction: row;
   padding: 10px;
-
 }
+
 .navButtons
 {
-  display: inline-block;
 
-  text-align: center;
   list-style-type: none;
-  margin-right: 10px;
+  margin-right: 15px;
   font-size: 125%;
+  border-right: solid 1px white;
+  padding-right: 10px;
 }
+
+#last-button
+{
+  border-right: none;
+}
+
 
 /*For the nav buttons when hover*/
 .navButtons:hover
@@ -94,13 +112,45 @@ img
 
 
 
+/*About page contact icons*/
+#contacts
+{
+
+}
+img.photo
+{
+  width:  50px;
+  height: 50px;
+}
+.contact-icons
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.items
+{
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+#contact-main
+{
+  box-sizing: border-box;
+  margin-top: 9em;
+  margin-left: 5em;
+}
 
 
 
+#python-main, #java-main
+{
+  margin: 20px;
+}
 
-
-
-
-
-
-{}
+#python-main p, #java-main p
+{
+  margin: 20px;;
+}
