@@ -34,6 +34,7 @@ body
   top: 0;
 
   font-family: 'Work Sans', sans-serif;
+  z-index: 1;
 }
 
 
@@ -49,6 +50,7 @@ footer
   /*Colors*/
   background-color:  rgb(24 26 27 / 95%);
   color: rgb(211 207 201);
+  z-index: 1;
 }
 
 /*Main title 'h1'*/
@@ -56,7 +58,7 @@ footer
 {
 
   padding: 1em;
-  
+
 }
 
 #navBarContainer
@@ -154,3 +156,86 @@ img.photo
 {
   margin: 20px;;
 }
+
+
+
+
+#python-main img
+{
+  height: 250px;
+  width: 250px;
+
+}
+
+
+#python-main img:hover
+{
+  height: 250px;
+  width: 250px;
+  filter: blur(5px);
+}
+
+
+.image-container
+{
+  width: 100%;
+}
+.view-projects
+{
+  padding: 1.5em;
+  border-radius: 5em;
+  border-color: blue;
+  background-color: grey;
+
+}
+
+
+
+
+
+/*USEFUL PROPERTIES FOR BUTTON ON IMAGES , PROJECTS PAGE
+.image-container {
+  position: relative;
+  width: 50%;
+
+}
+
+ Make the image responsive
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+ Style the button and place it in the middle of the container/image
+.image-container .view-projects {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{}
