@@ -25,8 +25,7 @@
         <div class="collapse navbar-collapse d-flex justify-content-end me-4" id="navbarNavAltMarkup">
           <div id = 'navBarContainer' class="navbar-nav ">
             <li class = 'navButtons nav-link' aria-current="page">Home</li>
-            <li class = 'navButtons nav-link'>Python</li>
-            <li class = 'navButtons nav-link'>Java</li>
+            <li class = 'navButtons nav-link'>Projects</li>
             <li class = 'navButtons nav-link'>Certificates</li>
             <li class = 'navButtons nav-link'>Contact me</li>
             <li class = 'navButtons nav-link' id = 'last-button'>About</li>
@@ -35,7 +34,10 @@
       </div>
     </nav>
   </head>
-  <body id ='as'>
+  <body>
+
+    <!-- ABOUT -->
+    <h6>ABOUT</h6>
     <section id = 'about' class = 'container'>
       <section>
         <h2>Section 1</h2>
@@ -46,72 +48,156 @@
       <section id="section2" data-nav="Section 2">
         <h2>Section 2</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-
         <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
       </section>
     </section>
+    <!-- END -->
 
-    <section class = "container" >
-      <div class="card" style="width: 18rem;">
-        <img src="icons/calendar.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">The Scheduler</h5>
-          <p class="card-text">The script reads a tutorials schedule and adds lectures slots in the avaliable poistions.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+    <!-- Projects -->
+    <h6>PROJECTS</h6>
+
+
+    <div class="container">
+      <div id = 'projects' class="row g-1">
+        <div class="row d-flex justify-content-evenly">
+                    <div class="border bg-light card col-4">
+
+                        <img src="icons/calendar.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">The Scheduler</h5>
+                          <p class="card-text">The script reads a tutorials schedule and adds lectures slots in the avaliable poistions.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-4">
+                      <div class="p-3 border bg-light">
+                        <img src="icons/calendar.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">The Calendar</h5>
+                          <p class="card-text">This reads a schedule and puts every slot in its right time in Google Calendar.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+
+        <div class="row d-flex justify-content-evenly">
+                    <div class="border bg-light card col-4">
+
+                        <img src="icons/calendar.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">The Scheduler</h5>
+                          <p class="card-text">The script reads a tutorials schedule and adds lectures slots in the avaliable poistions.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-4">
+                      <div class="p-3 border bg-light">
+                        <img src="icons/calendar.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">The Calendar</h5>
+                          <p class="card-text">This reads a schedule and puts every slot in its right time in Google Calendar.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+
+
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
         </div>
       </div>
+    </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="icons/calendar.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">The Calendar</h5>
-          <p class="card-text">This reads a schedule and puts every slot in its right time in Google Calendar.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </section>
 
+
+
+    <!-- END -->
+
+
+    <!-- Contacts -->
+    <h6>CONTACTS</h6>
     <div id = 'contact-main' class = "container">
-    <h2 id = 'conact-header'>Contact ways:</h2>
-    <p id = ''>You can contact me through any of the following ways and I will try to respond as soon as possible</p>
+      <h2 id = 'conact-header'>Contact ways:</h2>
+      <p id = ''>You can contact me through any of the following ways and I will try to respond as soon as possible</p>
 
 
-    <ul id = 'contacts'>
-      <div class = 'contact-icons'>
-        <img class = 'photo phone-item' src = 'icons/contact-icons/phone.png'>
-        <li id = 'phone' class = 'items photo phone-item'>Phone</li>
-      </div>
+      <ul id = 'contacts'>
+        <div class = 'contact-icons'>
+          <img class = 'photo phone-item' src = 'icons/contact-icons/phone.png'>
+          <li id = 'phone' class = 'items photo phone-item'>Phone</li>
+        </div>
 
-      <div class = 'contact-icons'>
-        <img class = 'photo facebook-item' src = 'icons/contact-icons/facebook.png'>
-        <li id = 'facebook' class = 'items photo facebook-item'>Facebook</li>
-      </div>
+        <div class = 'contact-icons'>
+          <img class = 'photo facebook-item' src = 'icons/contact-icons/facebook.png'>
+          <li id = 'facebook' class = 'items photo facebook-item'>Facebook</li>
+        </div>
 
-      <div class = 'contact-icons'>
-        <img class = 'photo github-item' src = 'icons/contact-icons/github.png'>
-        <li id = 'github' class = 'items photo github-item'>Github</li>
-      </div>
+        <div class = 'contact-icons'>
+          <img class = 'photo github-item' src = 'icons/contact-icons/github.png'>
+          <li id = 'github' class = 'items photo github-item'>Github</li>
+        </div>
 
-      <div class = 'contact-icons'>
-        <img class = 'photo linkedin-item' src = 'icons/contact-icons/linkedin.png'>
-        <li id = 'linkedin' class = 'items photo linkedin-item'>Linkedin</li>
-      </div>
+        <div class = 'contact-icons'>
+          <img class = 'photo linkedin-item' src = 'icons/contact-icons/linkedin.png'>
+          <li id = 'linkedin' class = 'items photo linkedin-item'>Linkedin</li>
+        </div>
 
-      <div class = 'contact-icons'>
-        <img class = 'photo email-item' src = 'icons/contact-icons/email.jpg'>
-        <li id = 'email' class = 'items photo email-item'>Email</li>
+        <div class = 'contact-icons'>
+          <img class = 'photo email-item' src = 'icons/contact-icons/email.jpg'>
+          <li id = 'email' class = 'items photo email-item'>Email</li>
+        </div>
+        <!--
+        <div id = 'first' class = 'contact-icons'>
+          <img class = 'photo' src = 'icons/contact-icons/whatsapp.png'>
+          <li id = 'whatsapp' class = 'items photo'>Whatsapp</li>
+        </div>
+      -->
+      </ul>
+    </div>
+    <!-- END -->
+
+
+<!-- PROJECTS BACKYP
+
+<div class="container">
+  <div class="row g-2">
+    <div class="col-6">
+      <div class="border bg-light card">
+
+          <img src="icons/calendar.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Scheduler</h5>
+            <p class="card-text">The script reads a tutorials schedule and adds lectures slots in the avaliable poistions.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+
       </div>
-      <!--
-      <div id = 'first' class = 'contact-icons'>
-        <img class = 'photo' src = 'icons/contact-icons/whatsapp.png'>
-        <li id = 'whatsapp' class = 'items photo'>Whatsapp</li>
-      </div>
-    -->
-    </ul>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
   </div>
+</div>
 
-
-
+-->
 
 
     <script src="js/App.js"></script>
