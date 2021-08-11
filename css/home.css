@@ -1,18 +1,23 @@
-
+/*GENERAL STYLES*/
 *
 {
   box-sizing: border-box;
   margin: 0px;
 }
 
+#main-body
+{
+  background-color: #f5f7fc;
+  background-color: white;
+}
+
+
+/*NAVBAR STYLES*/
 #main-nav
 {
   margin-top: 0;
   background-color:  rgb(43 71 130);
   color: rgb(211 207 201);
-
-
-
 }
 
 .nav-link
@@ -20,22 +25,19 @@
   color: inherit;
   border-right: solid 1px white;
   border-image: linear-gradient(transparent 10%, white 40% 60%, transparent 90%) 0 1 0 0 / 1px;
-
 }
 
 #last-button{
   border-right: none;
 }
 
-body
-{
-  margin-top: 100px;
-}
 
+
+
+/*FOOTER*/
 footer
 {
   /*To keep it at the bottom*/
-
   bottom: 0;
   margin-bottom: 0;
   text-align: center;
@@ -52,24 +54,8 @@ footer
 }
 
 
-.items
-{
-  list-style-type: none;
-  margin-left: 30px;
-}
 
-img.photo
-{
-  width:  50px;
-  height: 50px;
-}
-
-
-
-
-
-
-
+/*SECTION TITLES STYLES. TO BE REMOVED*/
 h6
 {
   font-size: 40px;
@@ -78,30 +64,97 @@ h6
 }
 
 
+
+
+/*PROJECTS STYLES*/
 #projects
 {
-  margin-top: 40px;
+  margin-top: 4em;
 }
 
 .row
 {
-  margin-bottom: 50px;
+  row-gap: 2em;
 }
 
 
 
 
+/*WELCOME STYLES*/
+#welcome-photo
+{
+  width:200px;
+  height: 200px;
+  margin: 0;
+}
+
+#welcome
+{
+  padding: 2.5rem;
+  padding-top: 7.5rem;
+  max-width: 100%;
+  background-image: url("../icons/sherlock.jpg");
+  background-size: cover;
+  height: 80vh;
+}
 
 
 
 
+/*CONTACTS STYLES*/
+#contacts img, #contacts svg
+{
+  height: 4em;
+  width: 4em;
+}
+#contacts li
+{
+  list-style-type: none;
+}
+
+#contacts
+{
+  max-width: 50%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+i
+{
+  margin-top: 1em;
+}
 
 
 
 
+/*CANVAS STYLES*/
+.offcanvas
+{
+  height: 100vh;
+  flex: 1;
+  width: 100vw;
+}
 
+.project-image
+{
+  height: 20rem;
+  width: 40rem;
+}
 
+.offcanvas-header
+{
 
+  width: 100vw;
+
+}
+.offcanvas-body::-webkit-scrollbar {
+  display: none;
+}
+.offcanvas-body
+{
+  -ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
 
 
 
