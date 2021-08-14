@@ -7,8 +7,14 @@
 
 #main-body
 {
-  background-color: #f5f7fc;
-  background-color: white;
+  background-color: #EDEDED;
+}
+
+
+.sections
+{
+  margin-top: 10em;
+  padding: 5rem;
 }
 
 
@@ -16,22 +22,26 @@
 #main-nav
 {
   margin-top: 0;
-  background-color:  rgb(43 71 130);
-  color: rgb(211 207 201);
+  /*background-color:  rgb(43 71 130);*/
+  background-color: #283346;
+  /*color: rgb(211 207 201);*/
+  color: white;
 }
+
 
 .nav-link
 {
   color: inherit;
-  border-right: solid 1px white;
-  border-image: linear-gradient(transparent 10%, white 40% 60%, transparent 90%) 0 1 0 0 / 1px;
+  /*
+    border-right: solid 1px white;
+    border-image: linear-gradient(transparent 10%, white 40% 60%, transparent 90%) 0 1 0 0 / 1px;
+  */
 }
-
-#last-button{
-  border-right: none;
-}
-
-
+/*
+  #last-button{
+    border-right: none;
+  }
+*/
 
 
 /*FOOTER*/
@@ -43,8 +53,13 @@ footer
   text-align: center;
   width: 100%;
   /*Colors*/
-  background-color:  rgb(24 26 27 / 95%);
+  /*background-color:  rgb(24 26 27 / 95%);*/
+  /*background-color: #3D6098;
   color: rgb(211 207 201);
+  */
+  background-color: #283346;
+  /*color: rgb(211 207 201);*/
+  color: white;
   z-index: 1;
 }
 
@@ -93,8 +108,11 @@ h6
   padding: 2.5rem;
   padding-top: 7.5rem;
   max-width: 100%;
-  background-image: url("../icons/sherlock.jpg");
-  background-size: cover;
+  background-color: #3870ff;
+  /*
+    background-image: url("../icons/sherlock.jpg");
+    background-size: cover;
+  */
   height: 80vh;
 }
 
@@ -106,6 +124,8 @@ h6
 {
   height: 4em;
   width: 4em;
+  color: #3870ff;
+
 }
 #contacts li
 {
@@ -155,6 +175,75 @@ i
   -ms-overflow-style: none;  /* IE and Edge */
 scrollbar-width: none;  /* Firefox */
 }
+
+
+
+
+/* ABOUT STYLES */
+#about-img
+{
+  width: 15rem;
+  height: 100%
+  object-fit: cover;;
+}
+
+
+
+
+
+
+
+
+
+#filler
+{
+  width: 15rem;
+  height: 25rem;
+  background-color: #050544;
+}
+
+.info
+{
+  border:2px solid #050544;
+}
+
+.enlarge:hover
+{
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+
+button[data-bs-toggle]
+{
+  background-color: #F04B4C;
+}
+
+.titles
+{
+  border-bottom: 0.15rem #c1c1c1 solid;
+  width: auto;
+  word-wrap: break-word;
+  display:inline-block;
+  width: fit-content;
+  padding: 1rem;
+  margin-bottom: 7rem;
+}
+.even
+{
+    background-color: #edeeef;
+}
+.odd
+{
+  background-color: white;
+}
+.list-group-item
+{
+  background-color: #edeeef;
+}
+
+
+
 
 
 

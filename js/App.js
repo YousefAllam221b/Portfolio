@@ -1,4 +1,4 @@
-
+/*
 let elements = document.getElementsByClassName('navButtons');
 
 function navBarPagesRedirect(text)
@@ -18,7 +18,7 @@ for (element of elements)
     let text = element.innerHTML;
     element.addEventListener("click", function () {navBarPagesRedirect(text); });
 }
-
+*/
 let facebookElements= document.getElementsByClassName('facebook-item');
 for (element of facebookElements)
 {
@@ -48,6 +48,35 @@ for (element of phoneElements)
 {
   element.addEventListener('click', function () {window.location.href = 'tel://+201001097153';})
 }
+
+
+
+
+var sections = document.querySelectorAll('section');
+var navItems = document.createDocumentFragment();
+
+
+var listItems = document.querySelectorAll('.navButtons');
+listItems.forEach((listItem, index , array) =>
+{
+
+  var sectionId = listItem.innerHTML.split(' ')[0].toLowerCase();
+  var section = document.getElementById(sectionId);
+  if (sectionId === 'home')
+  {
+    sectionId = 'welcome';
+  }
+  var section = document.getElementById(sectionId);
+  listItem.addEventListener("click", function () {section.scrollIntoView();});
+
+});
+
+
+
+
+
+
+
 
 /*
 var but = document.getElementById('but');
