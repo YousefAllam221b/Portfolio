@@ -279,6 +279,18 @@ button[data-bs-toggle]
   border: none;
   borde
 }
+.contact-items
+{
+  margin-top: 0;
+  margin-left: 1rem;
+  font-size: 75%;
+}
+
+.footer-icons
+{
+  margin-bottom: 0.25rem;
+}
+
 
 
 {}
