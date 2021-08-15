@@ -13,7 +13,7 @@
 
 .sections
 {
-  margin-top: 10em;
+
   padding: 5rem;
 }
 
@@ -82,17 +82,36 @@ h6
 
 
 /*PROJECTS STYLES*/
-#projects
-{
-  margin-top: 4em;
-}
 
 .row
 {
-  row-gap: 2em;
+
+  row-gap: 4em;
 }
 
+.card
+{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: 1px solid rgb(0 0 0 / 13%);
+  border-radius: 10%;
+}
 
+.card-title
+{
+  margin-top: 2em;
+  font-weight: bold;
+}
+
+.card-text
+{
+  width:80%;
+}
+
+.card-img-top
+{
+  width: 100%;
+}
 
 
 /*WELCOME STYLES*/
@@ -216,7 +235,7 @@ scrollbar-width: none;  /* Firefox */
 
 button[data-bs-toggle]
 {
-  background-color: #F04B4C;
+  background-color: #3870ff;
 }
 
 .titles
@@ -227,7 +246,8 @@ button[data-bs-toggle]
   display:inline-block;
   width: fit-content;
   padding: 1rem;
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
+
 }
 .even
 {
@@ -242,11 +262,23 @@ button[data-bs-toggle]
   background-color: #edeeef;
 }
 
+#contact-header
+{
+    margin-bottom: 7rem;
+}
 
+#projects-info
+{
+  width: 60%;
+  text-align: center;
 
+}
 
-
-
+.btn-primary
+{
+  border: none;
+  borde
+}
 
 
 {}
