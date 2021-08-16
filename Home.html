@@ -24,12 +24,15 @@
       </div>
     </div>
 
-    <nav id = 'main-nav' class="navbar navbar-expand fixed-top">
+
+    <nav id = 'main-nav' class="navbar navbar-expand-md fixed-top navbar-light">
       <div class="container-fluid navbar flex-row">
         <h1 id = 'main-title' class = 'navbar-brand ms-4'>Yousef Allam's Portfolio</h1>
-
-        <div class="d-flex justify-content-end me-4" id="navbarNavAltMarkup">
-          <div id = 'navBarContainer' class="navbar-nav ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse wide-nav" id="navbarNavAltMarkup">
+          <div id = 'navBarContainer' class="navbar-nav">
             <li class = 'navButtons nav-link' aria-current="page">Home</li>
             <li class = 'navButtons nav-link'>About me</li>
             <li class = 'navButtons nav-link'>Work</li>
@@ -41,6 +44,24 @@
       </div>
     </nav>
   </head>
+  <!-- old nav
+  <nav id = 'main-nav' class="navbar navbar-expand fixed-top">
+    <div class="container-fluid navbar flex-row">
+      <h1 id = 'main-title' class = 'navbar-brand ms-4'>Yousef Allam's Portfolio</h1>
+
+      <div class="d-flex justify-content-end me-4" id="navbarNavAltMarkup">
+        <div id = 'navBarContainer' class="navbar-nav ">
+          <li class = 'navButtons nav-link' aria-current="page">Home</li>
+          <li class = 'navButtons nav-link'>About me</li>
+          <li class = 'navButtons nav-link'>Work</li>
+          <li class = 'navButtons nav-link'>Skills</li>
+          <li class = 'navButtons nav-link'>Certificates</li>
+          <li class = 'navButtons nav-link' id = 'last-button'>Contact me</li>
+        </div>
+      </div>
+    </div>
+  </nav>
+-->
 
   <body id = 'main-body'>
 
@@ -54,10 +75,10 @@
     </div>
 
     <!-- ABOUT -->
-    <div id = 'about' class = 'container-fluid sections d-flex flex-column align-items-center odd'>
+    <div id = 'about' class = 'container sections d-flex flex-column align-items-center odd'>
         <h2 id = 'contact-header' class = 'titles fw-bold text-center  '>ABOUT ME</h2>
         <div class = 'container d-flex justify-content-around flex-row '>
-          <img id = 'about-img' class = 'img-fluid rounded' src = 'icons/dexter.jpg'>
+          <img id = 'about-img' class = 'img-fluid rounded' src = 'icons/dexter.jpg' style = ''>
           <!--<div class = 'align-self-end' style="width: 17.5rem; background-color: #3870ff; height:100%;"></div> -->
           <div class = 'd-flex flex-column w-50'>
 
@@ -79,7 +100,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
 
               <!-- END -->
     <!-- PROJECTS -->
@@ -94,7 +115,7 @@
 
         <div id = 'row-container' class="row d-flex justify-content-evenly">
 
-                    <div class=" card col-4 align-items-center">
+                    <div class=" card col-9 col-sm-9 col-md-5 col-lg-4 align-items-center">
                         <div class="card-body d-flex flex-column ">
                           <div class = 'mx-auto'>
                             <img src="icons\vikings.png" class="card-img-top" alt="...">
@@ -103,66 +124,107 @@
                           </div>
 
                           <!-- OFFCANVAS BUTTON-->
-                          <div class = 'd-flex mt-auto'>
+
+                          <div class = 'd-flex'>
+
                             <button class="btn btn-primary ms-auto rounded-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">See more</button>
+
                             <div class="offcanvas offcanvas-top container d-flex flex-column align-items-center" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+
                               <div class="offcanvas-header d-flex">
-                                <div></div>
+
                                 <h5 id="offcanvasTopLabel" class = 'display-5'>The Scheduler</h5>
                                 <button id = 'close-button' type="button" class="btn-close text-reset me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                               </div>
-                              <div class="offcanvas-body">
-                                <img src = "icons\vikings.png" class="img-fluid rounded mx-auto d-block project-image">
-                                <div class = 'card-body'>
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
 
+                              <h2 id = 'project-header' class = 'titles fw-bold text-center'>The Scheduler</h2>
+                              <div class="offcanvas-body container d-flex flex-row justify-content-between">
+                                <div class = 'd-flex flex-row justify-content-between'>
+
+                                  <div><!--
+                                  <div id="carouselExampleIndicators" class="carousel slide col-7" data-bs-ride="carousel">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                      </div>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="icons\vikings.png" class="d-block w-100 h-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="icons\sherlock.jpg" class="d-block w-100 h-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="icons\punisher.jpg" class="d-block w-100 h-100" alt="...">
+                                        </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>-->
+                                  </div>
+
+
+                                  <div class = 'd-flex flex-column col-4 justify-content-around'>
+                                    <p class = 'project-info' >Category: </p>
+                                    <p class = 'project-info overflow-auto'>
+                                      Description: Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                    </p>
+                                    <p  class = 'project-info'>Skills: </p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -173,7 +235,7 @@
                     </div>
 
 
-                    <div class=" card col-4 align-items-center">
+                    <div class=" card col-9 col-sm-9 col-md-5 col-lg-4 align-items-center">
                         <div class="card-body d-flex flex-column ">
                           <div class = 'mx-auto'>
 
@@ -185,14 +247,64 @@
                             <div class = 'd-flex mt-auto'>
                               <button class="btn btn-primary ms-auto rounded-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop">See more</button>
                               <div class="offcanvas offcanvas-top container d-flex flex-column align-items-center" tabindex="-1" id="offcanvasTop2" aria-labelledby="offcanvasTopLabel">
-                                <div class="offcanvas-header d-flex">
-                                  <h5 id="offcanvasTopLabel" class = 'display-5'>The Scheduler</h5>
-                                  <button id = 'close-button' type="button" class="btn-close text-reset me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                <div class = 'container-fluid me-auto d-flex flex-row justify-content-between align-items-center'>
+                                  <h2 id = 'contact-header' class = 'titles fw-bold text-center  '>ABOUT ME</h2>
+                                <button id = 'close-button' type="button" class="btn-close text-reset me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
                                 </div>
-                                <div class="offcanvas-body">
-                                  <img src = "icons\moneyHeist.jpg" class="img-fluid rounded mx-auto d-block project-image">
-                                  <div class = 'card-body'>
-                                    SECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND
+                                <div class="offcanvas-body d-flex flex-row justify-content-around ">
+                                  <div class = 'col-6 content'>
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                      </div>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="icons/vikings.png" class="d-block w-100 img-fluid carousel-img" alt="icons/vikings.png">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="icons/sherlock.jpg" class="d-block w-100 img-fluid carousel-img" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="icons/punisher.jpg" class="d-block w-100 img-fluid carousel-img" alt="...">
+                                        </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class = 'd-flex flex-column justify-content-between content col-4'>
+                                    <p class = 'project-info'>Category: </p>
+                                    <p id = 'project-description' class = 'project-info overflow-auto'>
+                                      Description: SECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND
+                                    </p>
+                                    <div class = 'd-flex flex-row justify-content-around'>
+                                      <span class = ''>Skills</span>
+                                      <div class="d-flex flex-column justify-content-around">
+                                          <div class = 'd-flex justify-content-around'>
+                                            <span class="badge rounded-pill text-dark">Warning</span>
+                                            <span class="badge rounded-pill text-dark">Warning</span>
+                                            <span class="badge rounded-pill text-dark">Warning</span>
+                                            <span class="badge rounded-pill text-dark">Warning</span>
+                                          </div>
+                                          <div class = 'd-flex justify-content-around'>
+                                            <span class="badge rounded-pill text-dark">Warning</span>
+                                            <span class="badge rounded-pill text-dark">Warning</span>
+                                            <span class="badge rounded-pill text-dark">Warning</span>
+                                            <span class="badge rounded-pill text-dark">Warning</span>
+                                          </div>
+                                      </div>
+                                    </div>
+
                                   </div>
                                 </div>
                               </div>
@@ -204,7 +316,7 @@
 
         <div id = 'row-container' class="row d-flex justify-content-evenly">
 
-                    <div class=" card col-4 align-items-center">
+                    <div class=" card col-9 col-sm-9 col-md-5 col-lg-4 align-items-center">
                         <div class="card-body d-flex flex-column ">
                           <div class = 'mx-auto'>
                             <img src="icons\breakingBad.jpg" class="card-img-top" alt="...">
@@ -217,7 +329,7 @@
                             <button class="btn btn-primary ms-auto rounded-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop3" aria-controls="offcanvasTop">See more</button>
                             <div class="offcanvas offcanvas-top container d-flex flex-column align-items-center" tabindex="-1" id="offcanvasTop3" aria-labelledby="offcanvasTopLabel">
                               <div class="offcanvas-header d-flex">
-                                <div></div>
+
                                 <h5 id="offcanvasTopLabel" class = 'display-5'>The Scheduler</h5>
                                 <button id = 'close-button' type="button" class="btn-close text-reset me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                               </div>
@@ -233,7 +345,7 @@
                     </div>
 
 
-                    <div class=" card col-4 align-items-center">
+                    <div class=" card col-9 col-sm-9 col-md-5 col-lg-4 align-items-center">
                         <div class="card-body d-flex flex-column ">
                           <div class = 'mx-auto'>
 
@@ -246,7 +358,7 @@
                               <button class="btn btn-primary ms-auto rounded-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop4" aria-controls="offcanvasTop4">See more</button>
                               <div class="offcanvas offcanvas-top container d-flex flex-column align-items-center" tabindex="-1" id="offcanvasTop4" aria-labelledby="offcanvasTopLabel">
                                 <div class="offcanvas-header d-flex">
-                                  <div></div>
+
                                   <h5 id="offcanvasTopLabel" class = 'display-5'>The Scheduler</h5>
                                   <button id = 'close-button' type="button" class="btn-close text-reset me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
@@ -272,22 +384,165 @@
     </div>
     <!-- END -->
 
+    <!-- WORKING CANVASOFF
+
+    <div class = 'd-flex mt-auto'>
+      <button class="btn btn-primary ms-auto rounded-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop">See more</button>
+      <div class="offcanvas offcanvas-top container d-flex flex-column align-items-center" tabindex="-1" id="offcanvasTop2" aria-labelledby="offcanvasTopLabel">
+
+        <div class = 'container-fluid me-auto d-flex flex-row justify-content-between align-items-center'>
+          <h2 id = 'contact-header' class = 'titles fw-bold text-center  '>ABOUT ME</h2>
+        <button id = 'close-button' type="button" class="btn-close text-reset me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        </div>
+        <div class="offcanvas-body d-flex flex-row justify-content-around ">
+          <div class = 'col-6 content'>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="icons/vikings.png" class="d-block w-100 img-fluid carousel-img" alt="icons/vikings.png">
+                </div>
+                <div class="carousel-item">
+                  <img src="icons/sherlock.jpg" class="d-block w-100 img-fluid carousel-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="icons/punisher.jpg" class="d-block w-100 img-fluid carousel-img" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class = 'd-flex flex-column justify-content-between content col-4'>
+            <p class = 'project-info'>Category: </p>
+            <p id = 'project-description' class = 'project-info overflow-auto'>
+              Description: SECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND PROJECTSECOND
+            </p>
+            <div class = 'd-flex flex-row'>
+              <span class = ''>Skills</span>
+              <div class="d-flex flex-column justify-content-around">
+                  <div class = 'd-flex justify-content-around m-auto'>
+                    <span class="badge rounded-pill text-dark">Warning</span>
+                    <span class="badge rounded-pill text-dark">Warning</span>
+                    <span class="badge rounded-pill text-dark">Warning</span>
+                    <span class="badge rounded-pill text-dark">Warning</span>
+                  </div>
+                  <div class = 'd-flex justify-content-around m-auto'>
+                    <span class="badge rounded-pill text-dark">Warning</span>
+                    <span class="badge rounded-pill text-dark">Warning</span>
+                    <span class="badge rounded-pill text-dark">Warning</span>
+                    <span class="badge rounded-pill text-dark">Warning</span>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div> -->
 
     <!-- SKILLS -->
     <div id = 'skills' class = 'container-fluid sections d-flex flex-column align-items-center odd'>
-        <h2 id = 'skills-header' class = 'titles fw-bold text-center  '>SKILLS</h2>
-        <div class="row d-flex justify-content-center mt-100">
-    <div class="col-md-6">
-        <div class="progress blue"> <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
-            <div class="progress-value">90%</div>
+      <h2 id = 'skills-header' class = 'titles fw-bold text-center  '>SKILLS</h2>
+      <div class = 'container-fluid d-flex flex-row w-100 align-items-center justify-content-center'>
+        <div class = 'col-4 d-flex flex-column justify-content-end border-end'>
+          <div class = 'd-flex flex-column align-items-start justify-content-end'>
+            <h5 class = 'skills-category'>Skills Category</h5>
+          </div>
+          <div class = 'd-flex align-items-center justify-content-start skill-item skill-yellow'>
+            <li class = 'list-unstyled    '>My Skills</li>
+            <div class="progress  col-4">
+              <div class="progress-bar skill-left" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class = 'd-flex align-items-center justify-content-start skill-item skill-yellow'>
+            <li class = 'list-unstyled    '>My Skills</li>
+            <div class="progress col-4">
+              <div class="progress-bar skill-left" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class = 'd-flex align-items-center justify-content-start skill-item skill-yellow'>
+            <li class = 'list-unstyled    '>My Skills</li>
+            <div class="progress  col-4">
+              <div class="progress-bar skill-left" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class = 'd-flex align-items-center justify-content-start skill-item skill-yellow'>
+            <li class = 'list-unstyled    '>My Skills</li>
+            <div class="progress  col-4">
+              <div class="progress-bar skill-left" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
         </div>
-        <div class="progress yellow"> <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
-            <div class="progress-value">37.5%</div>
+        <div class = 'col-4 d-flex flex-column justify-content-end right'>
+          <div class = 'd-flex flex-column align-items-center justify-content-center'>
+            <h5 class = 'skills-category'>Skills Category</h5>
+          </div>
+          <div class = 'd-flex align-items-center justify-content-end skill-item skill-blue'>
+            <li class = 'list-unstyled    '>My Skills</li>
+            <div class="progress  col-4">
+              <div class="progress-bar skill-right" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class = 'd-flex align-items-center justify-content-end skill-item skill-blue'>
+            <li class = 'list-unstyled    '>My Skills</li>
+            <div class="progress col-4">
+              <div class="progress-bar skill-right" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class = 'd-flex align-items-center justify-content-end skill-item skill-blue'>
+            <li class = 'list-unstyled    '>My Skills</li>
+            <div class="progress  col-4">
+              <div class="progress-bar skill-right" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class = 'd-flex align-items-center justify-content-end skill-item skill-blue'>
+            <li class = 'list-unstyled    '>My Skills</li>
+            <div class="progress  col-4">
+              <div class="progress-bar skill-right" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
         </div>
-    </div>
-</div>
+      </div>
+      <div id = 'row-skills' class = 'd-flex flex-column align-items-center'>
+        <h5 class = 'skills-category'>Skills Category</h5>
+        <div class="row d-flex justify-content-center">
+
+          <div class = 'd-flex flex-row justify-content-center'>
+            <div class="progress2 yellow col"> <span class="progress-left2"> <span class="progress-bar2"></span> </span> <span class="progress-right2"> <span class="progress-bar2"></span> </span>
+                <div class="progress-value2">37.5%</div>
+            </div>
+            <div class="progress2 blue col"> <span class="progress-left2"> <span class="progress-bar2"></span> </span> <span class="progress-right2"> <span class="progress-bar2"></span> </span>
+                <div class="progress-value2">90%</div>
+            </div>
+            <div class="progress2 yellow col"> <span class="progress-left2"> <span class="progress-bar2"></span> </span> <span class="progress-right2"> <span class="progress-bar2"></span> </span>
+                <div class="progress-value2">37.5%</div>
+            </div>
+            <div class="progress2 blue col"> <span class="progress-left2"> <span class="progress-bar2"></span> </span> <span class="progress-right2"> <span class="progress-bar2"></span> </span>
+                <div class="progress-value2">90%</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
     <!-- END -->
+
 
     <!-- CERTIFICATES -->
     <div id = 'certificates' class = 'container-fluid sections d-flex flex-column align-items-center even'>

@@ -172,6 +172,8 @@ i
   height: 100vh;
   flex: 1;
   width: 100vw;
+  background-color: #edeeef;
+  transform: scale(0.1);
 }
 
 .project-image
@@ -184,6 +186,7 @@ i
 {
 
   width: 100vw;
+
 
 }
 .offcanvas-body::-webkit-scrollbar {
@@ -202,8 +205,7 @@ scrollbar-width: none;  /* Firefox */
 #about-img
 {
   width: 15rem;
-  height: 100%
-  object-fit: cover;;
+
 }
 
 
@@ -246,7 +248,7 @@ button[data-bs-toggle]
   display:inline-block;
   width: fit-content;
   padding: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
 }
 .even
@@ -262,10 +264,6 @@ button[data-bs-toggle]
   background-color: #edeeef;
 }
 
-#contact-header
-{
-    margin-bottom: 7rem;
-}
 
 #projects-info
 {
@@ -277,7 +275,6 @@ button[data-bs-toggle]
 .btn-primary
 {
   border: none;
-  borde
 }
 .contact-items
 {
@@ -290,6 +287,136 @@ button[data-bs-toggle]
 {
   margin-bottom: 0.25rem;
 }
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #3870ff;
+ }
+
+@media (min-width: 576px) {
+  .wide-nav
+  {
+    display: flex;
+    justify-content: end;
+    margin-right: 1.5rem;
+  }
+
+  .navbar-collapse
+  {
+    flex-grow: 0;
+  }
+
+  .helper .navbar-toggler-icon
+  {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    color: red;
+  }
+
+}
+
+  .contact-icons
+  {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+}
+}
+
+#project-header
+{
+  padding: 0;
+}
+.project-info
+{
+  margin: 0;
+}
+
+#project-description
+{
+  height: 50%;
+}
+
+.badge
+{
+  margin-left: 2em;
+  margin-bottom: 2em;
+  background-color: #fcde67;
+}
+
+.content
+{
+  height: 60vh;
+}
+.carousel-img
+{
+  width: 100%;
+  object-fit: cover;
+  height: 60vh;
+  overflow: hidden;
+  object-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+.skill-item
+{
+  margin-top: 1rem;
+}
+
+.skill-left
+{
+    background-color: #fcde67;
+}
+.skill-right
+{
+  background-color: #3870ff;
+}
+
+.progress
+{
+  background-color: #c1c1c1;
+  width: 40%;
+}
+
+.right
+{
+  margin-left: 0%;
+}
+.list-unstyled
+{
+  margin-right: 2.8rem;
+}
+{}
+.skills-category
+{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#row-skills
+{
+  margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
 
 
 
