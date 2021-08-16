@@ -391,16 +391,22 @@ button[data-bs-toggle]
 
 .right
 {
-  margin-left: 0%;
+  margin-left: 1em;
 }
 .list-unstyled
 {
   margin-right: 2.8rem;
+
 }
-{}
+
+.row-skill
+{
+  margin: 0;
+}
+
 .skills-category
 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 1rem;
 }
 
@@ -410,7 +416,10 @@ button[data-bs-toggle]
 }
 
 
-
+.welcome-info
+{
+  color: white;
+}
 
 
 
