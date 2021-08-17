@@ -393,10 +393,10 @@ button[data-bs-toggle]
 {
   margin-left: 1em;
 }
+
 .list-unstyled
 {
   margin-right: 2.8rem;
-
 }
 
 .row-skill
@@ -415,7 +415,6 @@ button[data-bs-toggle]
   margin-top: 2rem;
 }
 
-
 .welcome-info
 {
   color: white;
@@ -431,14 +430,16 @@ button[data-bs-toggle]
   margin-left: 2rem;
 }
 
-
 .collapsing
 {
   height: auto;
 }
+
 @media screen and (max-width: 992px)
 {
-  .column-at-small {
+
+  .column-at-small
+    {
     flex-direction: column!important;
     }
 
@@ -464,10 +465,12 @@ button[data-bs-toggle]
     {
       border-bottom:  1px solid rgba(0,0,0,.125)!important;
     }
+
     .progress
     {
       width: 100%!important;
     }
+
 }
 
 
