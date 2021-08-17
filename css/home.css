@@ -421,7 +421,10 @@ button[data-bs-toggle]
   color: white;
 }
 
-
+.badge
+{
+  margin-bottom: 0;
+}
 
 
 
